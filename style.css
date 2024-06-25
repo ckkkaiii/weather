@@ -1,0 +1,63 @@
+@font-face {
+  font-family: fawesome;
+  src: url(fa-solid-900.ttf);
+}
+
+body {
+  text-align: center;
+  font-size: 5vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#day0 {
+  cursor: default;
+  pointer-events: none;
+}
+
+#day0::after {
+  content: '[\f0c1]';
+  font-family: fawesome;
+  color:#a2d5f2;
+  margin-left: 5px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid #aaa;
+  padding: 1vw 5vw;
+  text-align: center;
+}
+
+body {
+  /* 天気によって背景色を変えるための基本スタイル */
+  transition: background-color 0.3s ease;
+}
+
+.rainy {
+  background-color: #a2d5f2;
+  /* 雨の日は水色 */
+}
+
+.sunny {
+  background-color: #f9d71c;
+  /* 晴れの日はオレンジ色 */
+}
+
+table,
+tr,
+td,
+th {
+  font-size: 30px;
+  /* 文字サイズを調整 */
+}
